@@ -7,15 +7,20 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc"
+    "build": "tsc",
+    "release": "npm publish --access public"
   },
   "keywords": [],
   "author": "",
-  "files": ["lib/**/*"],
+  "files": [
+    "lib/**/*"
+  ],
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^17.0.42",
     "ts-node": "^10.8.1",
     "typescript": "^4.7.3"
+  },
+  "dependencies": {
+    "@types/node": "^17.0.42"
   }
 }
