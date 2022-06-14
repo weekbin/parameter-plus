@@ -7,7 +7,9 @@ interface GlobalOptions {
 
 type PartialGlobalOptions = Partial<GlobalOptions>;
 
-function checkNumber() {}
+function checkNumber(rules: any, source: any) {
+
+}
 
 function checkString() {}
 
@@ -16,6 +18,14 @@ function checkBoolean() {}
 function checkObject() {}
 
 function checkArray() {}
+
+function isPrimitive(source: any) {
+    return typeof source === 'boolean' || typeof source === 'string' || typeof source === 'number'
+}
+
+function isPrimitiveType(type: string) {
+    return type === 'string' || type === 'boolean' || type === 'number'
+}
 
 class Parameter {
     protected options: GlobalOptions;
@@ -51,18 +61,24 @@ class Parameter {
         return normalizedOptions;
     }
 
-    validate(rules: any, source: any) {
-        console.log(rules, source);
+    validate(rule: any, source: any) {
+        console.log(rule, source);
 
         if (this.options.strict) {
-            this.cleanDirtyValues(rules, source);
+            this.cleanDirtyValues(rule, source);
+        }
+
+        for(const [key, value] of Object.entries(source)) {
+
         }
     }
 
-    cleanDirtyValues(rules: any, source: any) {
+    cleanDirtyValues(rule: any, source: any) {
         for (let key of Object.keys(source)) {
-            if (key in rules) {
-                continue;
+            if (key in rule) {
+                
+                
+                
             } else {
                 delete source[key];
             }

@@ -1,4 +1,4 @@
-parameter
+parameter-plus
 =======
 
 [![NPM version][npm-image]][npm-url]
@@ -9,7 +9,7 @@ parameter
 [npm-url]: https://www.npmjs.com/package/@weekbin/parameter-plus
 [language-image]: https://img.shields.io/github/languages/top/weekbin/parameter-plus.svg
 [language-url]: https://github.com/weekbin/parameter-plus
-[license-image]: https://img.shields.io/github/license/top/weekbin/parameter-plus.svg
+[license-image]: https://img.shields.io/github/license/weekbin/parameter-plus.svg
 [license-url]: https://github.com/weekbin/parameter-plus
 
 A parameter verify tool. Easily check parameters when developing HTTP interface service.
