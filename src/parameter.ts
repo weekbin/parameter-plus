@@ -86,4 +86,4 @@ class Parameter {
     }
 }
 
-export default Parameter
+module.exports = Parameter
