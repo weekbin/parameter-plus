@@ -1,8 +1,9 @@
 {
-  "name": "parameter-plus",
+  "name": "@weekbin/parameter-plus",
   "version": "1.0.0",
   "description": "",
   "main": "src/parameter.ts",
+  "private": false,
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
