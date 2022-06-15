@@ -126,7 +126,7 @@ class Parameter {
         }
       }
     }
-    return errors;
+    return errors.length ? errors : undefined;
   }
 
   addValidateRule(type: string, validator: any) {
